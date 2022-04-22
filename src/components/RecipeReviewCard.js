@@ -35,11 +35,11 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 300 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            O
           </Avatar>
         }
         action={
@@ -47,8 +47,7 @@ export default function RecipeReviewCard(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={props.title}
       />
       <CardMedia
         component="img"
@@ -59,16 +58,24 @@ export default function RecipeReviewCard(props) {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
-        </Typography>
-        <ul>
+          <h2>Ingredients</h2>
+          <ul>
           {props.usedIngredients.map((ingrediant, index) => (
-            <li key={index}>{ingrediant.amount}</li>
+            <li key={index}>{ingrediant.name}</li>
+          ))}
+          {props.usedIngredients.map((ingrediant, index) => (
+            <li key={index}>{ingrediant.originalName}</li>
+          ))}
+          {props.usedIngredients.map((ingrediant, index) => (
+            <li key={index}>{ingrediant.original}</li>
+          ))}
+          {props.usedIngredients.map((ingrediant, index) => (
+            <li key={index}>Aisle: {ingrediant.aisle}</li>
           ))}
 
           </ul>
+        </Typography>
+        
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
