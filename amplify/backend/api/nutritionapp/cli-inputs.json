@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "nutritionapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/raulmandujano/Desktop/DGM 4790/nutrition-app/amplify/backend/api/nutritionapp/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 30,
+      "apiKeyExpirationDate": "2022-05-24T03:45:12.797Z",
+      "keyDescription": "AKIASYEN46I4AY4WGA5A"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}

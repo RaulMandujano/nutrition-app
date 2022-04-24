@@ -1,0 +1,28 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nutritionapp-staging-190552-authRole",
+      "UnauthRoleArn": "arn:aws:iam::189276156472:role/amplify-nutritionapp-staging-190552-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::189276156472:role/amplify-nutritionapp-staging-190552-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nutritionapp-staging-190552-deployment",
+      "UnauthRoleName": "amplify-nutritionapp-staging-190552-unauthRole",
+      "StackName": "amplify-nutritionapp-staging-190552",
+      "StackId": "arn:aws:cloudformation:us-east-1:189276156472:stack/amplify-nutritionapp-staging-190552/65b1d1a0-c338-11ec-8715-0e31c406af97",
+      "AmplifyAppId": "d2u5un5ebo5bqu"
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nutritionapp-dev-210423-authRole",
+      "UnauthRoleArn": "arn:aws:iam::189276156472:role/amplify-nutritionapp-dev-210423-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::189276156472:role/amplify-nutritionapp-dev-210423-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nutritionapp-dev-210423-deployment",
+      "UnauthRoleName": "amplify-nutritionapp-dev-210423-unauthRole",
+      "StackName": "amplify-nutritionapp-dev-210423",
+      "StackId": "arn:aws:cloudformation:us-east-1:189276156472:stack/amplify-nutritionapp-dev-210423/417a98b0-c37b-11ec-b4ea-128a36f42b4d",
+      "AmplifyAppId": "d2u5un5ebo5bqu"
+    }
+  }
+}

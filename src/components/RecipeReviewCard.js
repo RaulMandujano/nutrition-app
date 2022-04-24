@@ -57,8 +57,8 @@ export default function RecipeReviewCard(props) {
         onClick={() => router.push(`/recipe/${props.id}`)}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          <h2>Ingredients</h2>
+        
+      <h2>Ingredients</h2>
           <ul>
           {props.usedIngredients.map((ingrediant, index) => (
             <li key={index}>{ingrediant.name}</li>
@@ -73,8 +73,8 @@ export default function RecipeReviewCard(props) {
             <li key={index}>Aisle: {ingrediant.aisle}</li>
           ))}
 
-          </ul>
-        </Typography>
+      </ul>
+       
         
       </CardContent>
       <CardActions disableSpacing>
